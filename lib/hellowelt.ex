@@ -23,4 +23,8 @@ defmodule Hellowelt do
   def volts(resistencia,corrente) do
     resistencia * corrente
   end
+
+  def potencia(tensao,corrente) do
+    tensao * corrente
+  end
 end

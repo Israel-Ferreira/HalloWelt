@@ -10,7 +10,7 @@ defmodule HelloweltTest do
     assert Hellowelt.hallowelt() == "Hallo Welt"
   end
 
-  test "Deve dar 5.4e8" do
+  test "Deve dar 5.4e18" do
     assert Hellowelt.emc(60) == 5.4e18
   end
 
@@ -23,7 +23,11 @@ defmodule HelloweltTest do
   end
 
   test "Deve dar 5 Volts" do
-    assert Hellowelt.volts(2.5,2)
+    assert Hellowelt.volts(2.5,2) == 5
+  end
+
+  test "Deve dar 5500 W" do
+    assert Hellowelt.potencia(110,50) == 5500
   end
 
 end
