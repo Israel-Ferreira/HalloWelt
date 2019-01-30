@@ -22,4 +22,8 @@ defmodule HelloweltTest do
     assert Hellowelt.ep(60,10)
   end
 
+  test "Deve dar 5 Volts" do
+    assert Hellowelt.volts(2.5,2)
+  end
+
 end

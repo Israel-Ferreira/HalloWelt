@@ -20,4 +20,7 @@ defmodule Hellowelt do
     massa * 10 * altura
   end
 
+  def volts(resistencia,corrente) do
+    resistencia * corrente
+  end
 end
